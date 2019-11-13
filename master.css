@@ -1,0 +1,152 @@
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden;  /!\ CETTE LIGNE CASSE LE SCROLL, A FAIRE ATTENTION PAR LA SUITE  */
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(52, 52, 52);
+}
+
+.logo {
+  height: 93%;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.logo:hover {
+  height: 97%;
+}
+
+.button {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  border-radius: 20%;
+  height: 75%;
+}
+
+#dropdown {
+  float: left;
+}
+
+#dropdown-content {
+  position: absolute;
+  display: none;
+  color: white;
+  background-color: rgb(55, 55, 55);
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.first-page {
+  height: 90vh;
+  width: 100%;
+  float: left;
+  transition: 0.8s ease;
+  display: flex;
+}
+
+.second-page {
+  height: 90vh;
+  width: 100%;
+  float: left;
+  transition: 0.8s ease;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-flex {
+  margin: 0 10%;
+}
+
+.centered {
+  justify-self: center;
+}
+
+.third-page {
+  height: 90vh;
+  width: 100%;
+  float: left;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: 2s ease
+}
+
+.fade-out {
+  opacity: 1;
+  transition: 2s ease
+}
+
+#menu {
+  float: left;
+  height: 90vh;
+  width: 0%;
+  transition: 0.8s ease;
+  background-color: rgb(164, 164, 164);
+  transition: 0.8s ease;
+  justify-self: left;
+}
+
+.blockChild {
+  height: 8vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(163, 163, 163), rgb(143, 143, 143));
+  transition: 0.8s ease;
+  font-size: 2.2em;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(229, 229, 229);
+}
+
+a:hover, a:active, a:focus {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#hide-link {
+  display: hidden;
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.main {
+  margin: auto;
+  width: 100vh;
+  height: 86vh;
+  padding: 2vh;
+  max-width: 1024px;
+  background-color: rgb(120, 120, 120);
+  color: white;
+  transition: 0.8s ease;
+  font-size: 2.15em;
+}
+
+.biggerFont {
+  font-size: 1.5em;
+  display: block;
+}
+
+#wordToChange {
+  font-size: 5em;
+}

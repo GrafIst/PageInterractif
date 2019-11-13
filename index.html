@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="master.css">
+  <title></title>
+</head>
+
+<body onload="load()" onresize="resetSize()">
+
+  <div class="navbar" id="navbar">
+    <button class="button" id="menuSite" type="button" name="button" onclick="showMenu()">MENU</button>
+    <img onclick="smallSurprise()" class="logo" src="img/logo.png" alt="#" id="easter-egg">
+
+    <div id="dropdown">
+      <button class="button" id="mon-espace" type="button" onclick="showContent()" name="button">Mon espace</button>
+      <div id="dropdown-content">
+        <a href="#">S'identifier</a>
+        <a href="#">S'inscrire</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="first-page" id="first-page" class="fade-out">
+
+    <div id="menu">
+      <div id="hide-link">
+        <div class="blockChild">
+          <a onclick="alert('Ca ne sert a rien d appuyer, ca ne marche pas ¯\\_(ツ)_/¯ ');" href="#">Première section</a>
+        </div>
+        <div class="blockChild">
+          <a onclick="alert('Ca ne sert a rien d appuyer, ca ne marche pas ¯\\_(ツ)_/¯ ');" href="#">Deuxième section</a>
+        </div>
+        <div class="blockChild">
+          <a onclick="alert('Ca ne sert a rien d appuyer, ca ne marche pas ¯\_(ツ)_/¯ ');" href="#">Troisème section</a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="main" id="main">
+      <br>
+      <div id="hide-text" class="fade-in">
+        <h1>Ceci est une section centrée</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <br />
+
+  <div class="second-page fade-in" id="second-page">
+    <div id="hide-second">
+      <div class="container-flex">
+        <img class="centered" src="img/logo.png" alt="">
+        <h2>Le logo de Trackers Wonderland</h2>
+        <p class="biggerFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="third-page">
+    <br><br><br>
+    <h1 id="wordToChange">Ceci est une autre section centrée</h1>
+
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
